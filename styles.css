@@ -494,6 +494,32 @@ h1, h2, h3 {
   padding-left: 18px;
   margin-top: 36px;
 }
+.article-h2 {
+  font-size: 1.35rem;
+  margin: 36px 0 14px;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.pull-quote {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink);
+  border-left: 4px solid var(--accent);
+  background: var(--bg-alt);
+  padding: 22px 24px;
+  margin: 28px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.pull-quote cite {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  font-style: normal;
+  color: var(--muted);
+  font-family: "Inter", sans-serif;
+}
 .article-footer {
   margin-top: 48px;
   padding-top: 24px;
