@@ -19,7 +19,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: "Aptos Display", "Aptos", "Segoe UI Variable", "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: var(--ink);
   background: var(--cream);
   line-height: 1.6;
@@ -31,7 +31,7 @@ a { color: var(--gold-dark); text-decoration: none; }
 a:hover { color: var(--gold); }
 
 h1, h2, h3 {
-  font-family: "Aptos Display", "Aptos", "Segoe UI Variable Display", "Segoe UI", "Inter", system-ui, sans-serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: var(--navy);
   font-weight: 600;
   line-height: 1.15;
@@ -52,7 +52,7 @@ h1, h2, h3 {
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .nav-logo {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   color: #fff;
   font-weight: 600;
   font-size: 22px;
@@ -87,7 +87,7 @@ h1, h2, h3 {
   margin: 0 0 20px;
 }
 .hero h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-weight: 600;
   font-size: clamp(2.4rem, 4.4vw, 3.6rem);
   line-height: 1.08;
@@ -145,7 +145,7 @@ h1, h2, h3 {
   border-bottom: 1px solid var(--line);
 }
 .section-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: clamp(2rem, 3.2vw, 2.6rem);
   font-weight: 600;
   margin: 0 0 8px;
@@ -187,7 +187,7 @@ h1, h2, h3 {
   box-shadow: 0 8px 24px rgba(13, 26, 53, 0.08);
 }
 .metric-number {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 38px;
   font-weight: 700;
   color: var(--navy);
@@ -212,7 +212,7 @@ h1, h2, h3 {
   gap: 16px; flex-wrap: wrap; margin-bottom: 8px;
 }
 .role-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 26px;
   font-weight: 600;
   margin: 0;
@@ -251,7 +251,7 @@ h1, h2, h3 {
 .tag-group { margin-bottom: 32px; }
 .tag-group:last-child { margin-bottom: 0; }
 .tag-heading {
-  font-family: "Aptos Display", "Aptos", "Segoe UI Variable", "Segoe UI", "Inter", system-ui, sans-serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -284,7 +284,7 @@ h1, h2, h3 {
 .client-group { margin-bottom: 40px; }
 .client-group:last-child { margin-bottom: 0; }
 .client-group-heading {
-  font-family: "Aptos Display", "Aptos", "Segoe UI Variable", "Segoe UI", "Inter", system-ui, sans-serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -381,7 +381,7 @@ h1, h2, h3 {
   margin: 0 0 10px;
 }
 .writing-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 26px;
   font-weight: 600;
   margin: 0 0 12px;
@@ -433,7 +433,7 @@ h1, h2, h3 {
   margin: 0 0 14px;
 }
 .article-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -450,7 +450,7 @@ h1, h2, h3 {
 .article-body strong { color: var(--navy); font-weight: 600; }
 .article-body em { color: var(--navy); }
 .article-h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 28px;
   font-weight: 600;
   color: var(--navy);
@@ -458,7 +458,7 @@ h1, h2, h3 {
   letter-spacing: -0.005em;
 }
 .article-kicker {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 22px;
   font-style: italic;
   color: var(--navy);
@@ -468,7 +468,7 @@ h1, h2, h3 {
   margin-top: 40px;
 }
 .pull-quote {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   font-size: 24px;
   font-style: italic;
   line-height: 1.5;
@@ -485,7 +485,7 @@ h1, h2, h3 {
   font-size: 13px;
   font-style: normal;
   color: var(--gold-dark);
-  font-family: "Aptos Display", "Aptos", "Segoe UI Variable", "Segoe UI", "Inter", system-ui, sans-serif;
+  font-family: "Figtree", "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
