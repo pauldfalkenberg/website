@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>03 · Boardroom Modern — Paul Falkenberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --navy: #0d1a35; --navy-soft: #1a2b4f; --cream: #f5f1ea; --gold: #b48b3d; --gold-dark: #8a6a2d; --ink: #1a1a1a; --muted: #5c5c5c; --line: #e5dfd1; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: "Inter", sans-serif; line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; }
+  .style-tag { position: fixed; top: 14px; right: 14px; background: var(--gold); color: var(--navy); padding: 6px 12px; border-radius: 3px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; z-index: 99; }
+  .nav { background: var(--navy); padding: 16px 0; }
+  .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-logo { font-family: "Cormorant Garamond", serif; color: #fff; font-size: 22px; font-weight: 600; letter-spacing: 0.02em; }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a { color: var(--cream); text-decoration: none; font-size: 14px; font-weight: 500; opacity: 0.85; }
+  .nav-links a:hover { color: var(--gold); opacity: 1; }
+  .hero { padding: 80px 0 60px; border-bottom: 1px solid var(--line); }
+  .hero-inner { max-width: 1100px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: 1.6fr 1fr; gap: 64px; align-items: center; }
+  .hero-eyebrow { color: var(--gold-dark); text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; font-weight: 600; margin: 0 0 18px; }
+  .hero h1 { font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 56px; line-height: 1.1; color: var(--navy); letter-spacing: -0.01em; margin: 0 0 24px; }
+  .hero h1 em { color: var(--gold-dark); font-style: italic; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 56ch; margin: 0 0 32px; }
+  .btn { display: inline-block; padding: 13px 26px; font-weight: 600; font-size: 14px; text-decoration: none; letter-spacing: 0.04em; margin-right: 10px; border-radius: 2px; transition: all 0.2s; }
+  .btn-primary { background: var(--navy); color: var(--cream); }
+  .btn-primary:hover { background: var(--gold-dark); }
+  .btn-ghost { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+  .btn-ghost:hover { background: var(--navy); color: var(--cream); }
+  .portrait-frame { position: relative; padding: 18px; background: var(--cream); border: 1px solid var(--gold); border-radius: 4px; box-shadow: 12px 12px 0 var(--navy); max-width: 320px; margin: 0 auto; }
+  .portrait-frame img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 2px; display: block; }
+  section { padding: 72px 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+  h2 { font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 40px; color: var(--navy); margin: 0 0 8px; letter-spacing: -0.01em; }
+  .section-rule { width: 60px; height: 2px; background: var(--gold); margin-bottom: 36px; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .metric { background: #fff; padding: 32px 28px; border: 1px solid var(--line); border-top: 3px solid var(--gold); box-shadow: 0 1px 0 rgba(0,0,0,0.04); }
+  .metric-num { font-family: "Cormorant Garamond", serif; font-size: 42px; font-weight: 700; color: var(--navy); letter-spacing: -0.01em; line-height: 1; margin-bottom: 12px; }
+  .metric-lbl { color: var(--muted); font-size: 15px; line-height: 1.5; }
+  .writing-card { background: #fff; padding: 36px 36px 32px; border: 1px solid var(--line); border-left: 3px solid var(--gold); max-width: 720px; }
+  .writing-date { color: var(--gold-dark); text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; font-weight: 600; margin: 0 0 12px; }
+  .writing-card h3 { font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 28px; color: var(--navy); margin: 0 0 12px; line-height: 1.25; }
+  .writing-card p { color: var(--muted); margin: 0 0 14px; }
+  .writing-cta { color: var(--gold-dark); font-weight: 600; font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; }
+  footer { background: var(--navy); color: rgba(245,241,234,0.7); padding: 28px 0; margin-top: 60px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="style-tag">03 · Boardroom Modern</div>
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Paul Falkenberg</div>
+    <nav class="nav-links">
+      <a href="#">About</a><a href="#">Impact</a><a href="#">Experience</a><a href="#">Writing</a><a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">CRO / VP Sales · Atlanta, Georgia</p>
+      <h1>Building revenue engines that <em>scale</em> &mdash; and <em>exit.</em></h1>
+      <p class="lede">Growth-driven enterprise sales executive with 20+ years scaling SaaS, data, and analytics organizations from startup through PE-backed exit.</p>
+      <a class="btn btn-primary" href="#">Email Paul</a>
+      <a class="btn btn-ghost" href="#">LinkedIn</a>
+    </div>
+    <div class="portrait-frame"><img src="../assets/headshot.jpg" alt="Paul Falkenberg" /></div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2>Impact</h2><div class="section-rule"></div>
+    <div class="metrics">
+      <div class="metric"><div class="metric-num">$136M</div><div class="metric-lbl">Strategic acquisition of Appriss by LexisNexis</div></div>
+      <div class="metric"><div class="metric-num">$50M → $90M</div><div class="metric-lbl">ARR growth in under three years</div></div>
+      <div class="metric"><div class="metric-num">30+</div><div class="metric-lbl">Enterprise sellers built, led, and ramped</div></div>
+    </div>
+  </div>
+</section>
+<section style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <h2>Writing</h2><div class="section-rule"></div>
+    <a href="#" style="text-decoration:none;" class="writing-card-link">
+      <div class="writing-card">
+        <p class="writing-date">May 12, 2026</p>
+        <h3>Tell Me Something I Don't Know About My Business</h3>
+        <p>Rumsfeld's known knowns, known unknowns, and unknown unknowns as a framework for data maturity &mdash; and how descriptive, predictive, and prescriptive analytics each map to a different layer of business insight.</p>
+        <span class="writing-cta">Read article &rarr;</span>
+      </div>
+    </a>
+  </div>
+</section>
+<footer><div class="container">&copy; 2026 Paul Falkenberg · Atlanta, GA</div></footer>
+</body>
+</html>

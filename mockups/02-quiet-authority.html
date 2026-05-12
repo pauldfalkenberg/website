@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>02 · Quiet Authority — Paul Falkenberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root { --ink: #111; --muted: #6b6b6b; --line: #eeeeee; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #ffffff; color: var(--ink); font-family: "Inter", -apple-system, system-ui, sans-serif; line-height: 1.7; font-size: 17px; -webkit-font-smoothing: antialiased; }
+  .style-tag { position: fixed; top: 14px; right: 14px; background: #111; color: #fff; padding: 6px 12px; border-radius: 3px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; z-index: 99; }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 80px 24px 60px; }
+  .logo { font-weight: 500; color: var(--muted); font-size: 15px; margin-bottom: 120px; }
+  h1 { font-family: inherit; font-weight: 500; font-size: 28px; line-height: 1.35; letter-spacing: -0.005em; margin: 0 0 24px; color: var(--ink); }
+  p { color: var(--ink); margin: 0 0 18px; }
+  .muted { color: var(--muted); }
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: #ccc; }
+  a:hover { text-decoration-color: var(--ink); }
+  .portrait { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin-bottom: 56px; display: block; }
+  section { margin-top: 96px; }
+  h2 { font-family: inherit; font-weight: 500; font-size: 15px; color: var(--muted); margin: 0 0 28px; text-transform: none; letter-spacing: 0; }
+  .impact-list { list-style: none; padding: 0; margin: 0; }
+  .impact-list li { padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; gap: 24px; }
+  .impact-list li:last-child { border-bottom: none; }
+  .impact-list .num { font-weight: 600; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .impact-list .lbl { color: var(--muted); text-align: right; font-size: 15px; }
+  .writing-item p { margin: 0; }
+  .writing-item .meta { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+  .writing-item h3 { font-family: inherit; font-weight: 500; font-size: 18px; margin: 0 0 8px; }
+  footer { margin-top: 120px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="style-tag">02 · Quiet Authority</div>
+<div class="wrap">
+  <div class="logo">Paul Falkenberg</div>
+  <img class="portrait" src="../assets/headshot.jpg" alt="Paul Falkenberg" />
+  <h1>Building revenue engines that scale — and exit.</h1>
+  <p>Growth-driven enterprise sales executive with 20+ years scaling SaaS, data, and analytics organizations from startup through PE-backed exit. Based in Atlanta.</p>
+  <p><a href="#">Email</a> &nbsp;·&nbsp; <a href="#">LinkedIn</a></p>
+
+  <section>
+    <h2>Impact</h2>
+    <ul class="impact-list">
+      <li><span class="num">$136M</span><span class="lbl">Appriss acquired by LexisNexis</span></li>
+      <li><span class="num">$50M → $90M</span><span class="lbl">ARR growth in under three years</span></li>
+      <li><span class="num">30+</span><span class="lbl">Enterprise sellers built and led</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    <div class="writing-item">
+      <p class="meta">May 12, 2026</p>
+      <h3><a href="#">Tell Me Something I Don't Know About My Business</a></h3>
+      <p class="muted">Rumsfeld's known knowns, known unknowns, and unknown unknowns as a framework for data maturity.</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Paul Falkenberg</footer>
+</div>
+</body>
+</html>

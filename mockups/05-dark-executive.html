@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>05 · Dark Executive — Paul Falkenberg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet" />
+<style>
+  :root { --bg: #0a0d14; --bg-soft: #11151f; --text: #ebebe6; --muted: #888379; --accent: #c9ad6a; --accent-dim: #806c3d; --line: #1f2532; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased; font-weight: 400; }
+  .style-tag { position: fixed; top: 14px; right: 14px; background: var(--accent); color: var(--bg); padding: 6px 12px; border-radius: 3px; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; z-index: 99; }
+  .nav { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-logo { color: var(--text); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px; }
+  .nav-links { display: flex; gap: 32px; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+  .hero { padding: 120px 0 100px; position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; top: 0; right: 0; width: 60%; height: 100%; background: radial-gradient(ellipse at 70% 50%, rgba(201,173,106,0.12), transparent 70%); pointer-events: none; }
+  .hero-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; }
+  .hero-eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 0.24em; font-size: 11px; font-weight: 500; margin: 0 0 24px; }
+  .hero h1 { font-weight: 300; font-size: 68px; line-height: 1.05; letter-spacing: -0.025em; margin: 0 0 32px; color: var(--text); }
+  .hero h1 em { font-family: "Cormorant Garamond", serif; font-weight: 500; color: var(--accent); font-size: 1.05em; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 52ch; margin: 0 0 40px; font-weight: 400; line-height: 1.6; }
+  .btn { display: inline-block; padding: 14px 28px; font-weight: 500; font-size: 13px; text-decoration: none; letter-spacing: 0.12em; text-transform: uppercase; margin-right: 12px; transition: all 0.2s; border: 1px solid; }
+  .btn-primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .btn-primary:hover { background: transparent; color: var(--accent); }
+  .btn-ghost { background: transparent; color: var(--text); border-color: var(--muted); }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .portrait-wrap { position: relative; }
+  .portrait-wrap::before { content: ""; position: absolute; top: 24px; left: 24px; right: -24px; bottom: -24px; border: 1px solid var(--accent); pointer-events: none; }
+  .portrait { width: 100%; max-width: 420px; aspect-ratio: 4/5; object-fit: cover; object-position: top; display: block; filter: brightness(0.95) contrast(1.05); position: relative; }
+  section { padding: 100px 0; border-top: 1px solid var(--line); }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+  h2 { font-weight: 300; font-size: 44px; letter-spacing: -0.02em; margin: 0 0 12px; color: var(--text); }
+  h2 em { font-family: "Cormorant Garamond", serif; color: var(--accent); font-weight: 500; }
+  .section-lede { color: var(--muted); margin: 0 0 56px; font-size: 16px; max-width: 50ch; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; }
+  .metric { position: relative; padding-top: 24px; border-top: 1px solid var(--accent-dim); }
+  .metric-num { font-weight: 300; font-size: 56px; letter-spacing: -0.03em; line-height: 1; color: var(--accent); margin-bottom: 14px; font-feature-settings: "tnum"; }
+  .metric-lbl { color: var(--muted); font-size: 14px; line-height: 1.55; }
+  .writing-card { display: block; background: var(--bg-soft); border: 1px solid var(--line); padding: 40px 40px 36px; text-decoration: none; color: var(--text); max-width: 760px; transition: all 0.25s; }
+  .writing-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .writing-date { color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; font-size: 11px; font-weight: 500; margin: 0 0 14px; }
+  .writing-card h3 { font-weight: 400; font-size: 26px; letter-spacing: -0.01em; margin: 0 0 14px; line-height: 1.3; color: var(--text); }
+  .writing-card p { color: var(--muted); margin: 0 0 18px; line-height: 1.6; }
+  .writing-cta { color: var(--accent); font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; }
+  footer { padding: 32px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="style-tag">05 · Dark Executive</div>
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Paul Falkenberg</div>
+    <nav class="nav-links">
+      <a href="#">About</a><a href="#">Impact</a><a href="#">Experience</a><a href="#">Writing</a><a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">CRO · VP Sales · Atlanta</p>
+      <h1>Building revenue engines that <em>scale</em> — and <em>exit.</em></h1>
+      <p class="lede">Growth-driven enterprise sales executive with 20+ years scaling SaaS, data, and analytics organizations from startup through PE-backed exit.</p>
+      <a class="btn btn-primary" href="#">Email Paul</a><a class="btn btn-ghost" href="#">LinkedIn</a>
+    </div>
+    <div class="portrait-wrap"><img class="portrait" src="../assets/headshot.jpg" alt="Paul Falkenberg" /></div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2><em>Impact</em>, by the numbers.</h2>
+    <p class="section-lede">Three decades of compounding outcomes across PE-backed SaaS, data, and analytics businesses.</p>
+    <div class="metrics">
+      <div class="metric"><div class="metric-num">$136M</div><div class="metric-lbl">Strategic acquisition of Appriss by LexisNexis</div></div>
+      <div class="metric"><div class="metric-num">$50–90M</div><div class="metric-lbl">ARR growth at Appriss in under three years</div></div>
+      <div class="metric"><div class="metric-num">30+</div><div class="metric-lbl">Enterprise sellers built, led, and ramped</div></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2><em>Writing</em></h2>
+    <p class="section-lede">Notes on AI, GTM, and the messy intersection of technology and revenue.</p>
+    <a class="writing-card" href="#">
+      <p class="writing-date">May 12, 2026</p>
+      <h3>Tell Me Something I Don't Know About My Business</h3>
+      <p>Rumsfeld's known knowns, known unknowns, and unknown unknowns as a framework for data maturity &mdash; and how descriptive, predictive, and prescriptive analytics each map to a different layer of business insight.</p>
+      <span class="writing-cta">Read article →</span>
+    </a>
+  </div>
+</section>
+<footer><div class="container">© 2026 Paul Falkenberg · Atlanta, GA</div></footer>
+</body>
+</html>
